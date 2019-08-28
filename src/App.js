@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import { Hello } from "./Hello";
 import { AddTodo } from "./useReducer/AddTodo";
 import { Word } from "./useMemo/Word";
 import { IntroName } from "./useState/IntroName";
