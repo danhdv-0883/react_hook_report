@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./App.css";
+import { Hello } from "./Hello";
+import { AddTodo } from "./useReducer/AddTodo";
+import { Word } from "./useMemo/Word";
+import { IntroName } from "./useState/IntroName";
+import { SaveName } from "./useEffect/SaveName";
+import { FormUseCustomHook } from "./customhooks/FormUseCustomHook";
+import { FormUseRef } from "./useRef/FormUseRef";
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <h3> - useReducer: </h3>
+    <AddTodo />
+    <h3> - useMemo: </h3>
+    <Word />
+    <h3> - useState: </h3>
+    <IntroName />
+    <h3> - useEffect: </h3>
+    <SaveName />
+    <h3> - custom hooks: </h3>
+    <FormUseCustomHook />
+    <h3> - useRef: </h3>
+    <FormUseRef />
+  </div>
   );
 }
 
